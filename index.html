@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
 </head>
@@ -16,7 +21,11 @@
         <form id="todo-form">
             <p>Adicione a sua tarefa</p>
             <div class="form-control">
-                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    placeholder="O que você vai fazer?"
+                />
                 <button type="submit">
                     <i class="fa-thin fa-plus"></i>
                 </button>
@@ -32,17 +41,17 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
-        <div class="toolbar">
-            <div class="search">
+        <div id="toolbar">
+            <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
-                    <input type="text" id="search-input" placeholder="Buscar">
+                    <input type="text" id="search-input" placeholder="Buscar"/>
                     <button id="erase-button">
                         <i class="fa-solid fa-delete-left"></i>
                     </button>
                 </form>
             </div>
-            <div class="filter">
+            <div id="filter">
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
                     <option value="all">Todos</option>
@@ -50,8 +59,8 @@
                     <option value="todo">A fazer</option>
                 </select>
             </div>
-            <div class="todo-list">
-                <div class="todo done">
+            <div id="todo-list">
+                <!-- <div class="todo done">
                     <h3>Estou fazendo alguma coisa...</h3>
                     <button id="finish-todo">
                         <i class="fa-solid fa-check"></i>
@@ -74,7 +83,7 @@
                     <button id="remove-todo">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>    
